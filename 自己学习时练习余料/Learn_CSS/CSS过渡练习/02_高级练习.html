@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02_高级练习</title>
+    <style>
+        .outbox{
+            width: 350px;
+            height: 800px;
+            position: relative;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+        .inbox{
+            width: 350px;
+            height: 800px;
+            background-color: black;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            font-size: 45px;
+            color: white;
+            text-align: center;
+            line-height: 500px;
+            transition: all 0.5s;
+        }
+        img{
+            width: 350px;
+            height: 800px;
+            transition: all 0.5s;
+        }
+        .outbox:hover img{
+            transform-origin:100px 400px ;
+            transform: scale(3) rotate(20deg);
+        }
+        .inbox:hover{
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="outbox">
+        <img src="./张文昊-军训限定.jpg" alt="">
+        <div class="inbox">张文昊-军训限定</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* 后代选择器 */
+        ul li {
+            color: red;
+        }
+        ol li {
+            color: springgreen;
+        }
+        ul li a {
+            color: violet;
+        }
+        ol a {
+            color: slateblue;
+        }
+        .god li {
+            color:tan;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>火焰跳跃</li>
+        <li>纸人替身</li>
+        <li>
+            <a href="#">愚者神国</a>
+        </li>
+    </ul>
+    <hr>
+    <ol>
+        <li>愚者</li>
+        <li>诡秘侍者</li>
+        <li>
+            <a href="#">奇迹师</a>
+        </li>
+    </ol>
+    <hr>
+    <ol class="god">
+        <li>黑夜女神</li>
+        <li>月亮</li>
+    </ol>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML表单_fieldest和legend标签</title>
+</head>
+<body>
+    <form action="https://search.jd.com/search" target="_blank">
+        <!-- fieldset用于分类 -->
+        <fieldset>
+            <legend>主要信息</legend>
+            <label for="zhanghu">账户：</label>
+            <input id="zhanghu" type="text" name="account" maxlength="10">
+            <br>
+            <label>
+                密码：
+                <input type="password" name="pwd" maxlength="10">
+            </label>
+            <br>
+            性别：
+            <input id="nan" type="radio" name="gender" value="male">
+            <label for="nan">男</label>
+            <label>
+                <input type="radio" name="gender" value="female">
+                女
+            </label>
+        </fieldset>       
+        <br>
+        <fieldset>
+            <legend>附加信息</legend>
+            能力：
+            <label>
+                <input type="checkbox" name="hobby" value="1">控制秘偶
+            </label>
+            <label>
+                <input type="checkbox" name="hobby" value="2">火焰跳跃
+            </label>
+            <label>
+                <input type="checkbox" name="hobby" value="3">纸人替身
+            </label>
+            <br>
+            其他：
+            <textarea name="other" cols="30" rows="10"></textarea>
+            <br>
+            籍贯：
+            <select name="place">
+                <option value="贝">贝克兰德</option>
+                <option value="廷">廷根</option>
+            </select>
+        </fieldset>
+        <input type="hidden" name="tag" value="jindong">
+        <br>
+        <input type="submit" value="确认">
+        <input type="reset">
+        <input type="button" value="检测账户是否被注册">
+    </form>
+</body>
+</html>

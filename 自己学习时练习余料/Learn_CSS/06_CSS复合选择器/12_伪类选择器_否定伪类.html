@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>12_伪类选择器_否定伪类</title>
+    <style>
+        /* 排除not里面的属性 */
+        div>p:not(.fail) {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>张三：98</p>
+        <p>李四：88</p>
+        <p>王五：78</p>
+        <p>赵六：68</p>
+        <p class="fail">孙七：59</p>
+        <p class="fail">陈八：58</p>
+    </div>
+</body>
+</html>

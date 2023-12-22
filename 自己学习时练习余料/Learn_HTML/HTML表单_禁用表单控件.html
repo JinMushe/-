@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML表单_禁用表单控件</title>
+</head>
+<body>
+    <form action="https://search.jd.com/search" target="_blank">
+        <!-- value是默认值标签，maxlength是输入的最长长度标签  -->
+        <!-- 禁用控件 disabled -->
+        账户：<input disabled type="text" name="account"value="KleinMoretti" maxlength="10">
+        <br>
+        密码：<input type="password" name="pwd" maxlength="10">
+        <br>
+        性别：
+        <!-- radio可以变成单选按钮，name分组 -->
+        <input type="radio"name="gender" value="male" disabled>男
+        <input type="radio"name="gender" value="female">女
+        <br>
+        能力：
+        <!-- checkbox复选按钮 -->
+        <input type="checkbox"name="hobby" value="1" disabled>控制秘偶
+        <input type="checkbox"name="hobby" value="2">火焰跳跃
+        <input type="checkbox"name="hobby" value="3" disabled>纸人替身
+        <br>
+        其他：
+        <!-- 文本域textarea -->
+        <textarea name="other" cols="30" rows="10" disabled></textarea>
+        <br>
+        籍贯：
+        <select name="place">
+            <!-- 默认selected -->
+            <option value="贝" selected>贝克兰德</option>
+            <option value="廷">廷根</option>
+        </select>
+        <!-- 隐藏域 hidden-->
+        <input type="hidden" name="tag" value="jindong">
+        <br>
+        <!-- 确认按钮，第一种写法 -->
+        <!-- <button>确认</button> -->
+        <!-- 确认按钮，第二种写法 submit -->
+        <input type="submit" value="确认">
+        <!-- 重置按钮 1-->
+        <!-- <button type="reset">重置</button> -->
+        <!-- 重置按钮 1-->
+        <input type="reset">
+        <!-- 检测账户是否被注册 普通按钮button -->
+        <!-- <button type="button">检测账户是否被注册</button> -->
+        <input type="button" value="检测账户是否被注册">
+    </form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>01_交集选择器</title>
+    <style>
+        .Klein {
+            color: slategray;
+        }
+        .Gelman {
+            color: red;
+        }
+        /* 交集选择器 */
+        p.Gelman {
+            color: navy;
+        }
+        .Gelman.Klein {
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="Klein">克莱恩莫雷蒂</h2>
+    <h2 class="Gelman">格尔曼斯帕罗</h2>
+    <h2 class="Klein Gelman">愚者</h2>
+    <hr>
+    <p class="Gelman">奥黛丽霍尔</p>
+    <p class="Gelman">伦纳德米切尔</p>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>06_属性选择器</title>
+    <style>
+        /* 属性选择器第一种写法 */
+        /* [title] {
+            color: royalblue;
+        } */
+
+        /* 第二种写法 */
+        /* [title="amon1"] {
+            color: royalblue;
+        } */
+
+        /* 第三种写法 以什么什么开头*/
+        /* [title^="a"] {
+            color: royalblue;
+        } */
+
+        /* 第四种写法 以什么什么结尾*/
+        /* [title$="1"] {
+            color: royalblue;
+        } */
+        /* 第五种写法 具有指定的元素的*/
+            [title*="m"] {
+            color: royalblue;
+        }        
+    </style>
+</head>
+<body>
+    <div title="amon1">阿蒙1号</div>
+    <div title="amon2">阿蒙2号</div>
+    <div title="amon3">阿蒙3号</div>
+    <div title="amon4">阿蒙4号</div>
+</body>
+</html>

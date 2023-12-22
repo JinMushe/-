@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>05_兄弟选择器</title>
+    <style>
+        /* 选中div后紧紧相邻的兄弟p元素，向下看 */
+        /* div+p {
+            color: rebeccapurple;
+        } */
+
+        /* 选中div后所有的兄弟p元素，向下看 */
+        div~p {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>克莱恩莫雷蒂</div>
+    <p>阿曼尼西斯</p>
+    <p>梅丽莎莫雷蒂</p>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>10_伪类选择器_结构伪类2.html</title>
+    <style>
+        /* 选中的是div中最后一个p元素(按所有兄弟计算的) */
+        /* div>p:last-child {
+            color: red;
+        } */
+        /* 选中的是div中第n个p元素(按所有兄弟计算的) */
+        /* div>p:nth-child(3) {
+            color: red;
+        } */
+
+        /* 前三个 */
+        /* div>p:nth-child(-n+3) {
+            color: red;
+        } */
+
+        /* 选中的是div中最后一个p元素(所有同类型兄弟计算) */
+        div>p:first-of-type {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- 结构1 -->
+    <!-- <div>
+        <p>张三：98</p>
+        <p>李四：88</p>
+        <p>王五：78</p>
+        <p>赵六：68</p>
+        <p>孙七：60</p>
+        <p>陈八：58</p>
+    </div> -->
+
+    <!-- 结构2 -->
+    <div>
+        <span>测试1</span>
+        <p>张三：98</p>
+        <p>李四：88</p>
+        <p>王五：78</p>
+        <p>赵六：68</p>
+        <p>孙七：60</p>
+        <p>陈八：58</p>
+    </div>
+
+</body>
+</html>
